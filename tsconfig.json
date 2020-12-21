@@ -1,0 +1,19 @@
+{
+  "include": [
+    "src",
+    "typings"
+  ],
+  "exclude": [
+    "src/**/*.spec.*",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "target": "ES2015",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext", // "es2015" for tree-shaking
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true
+  }
+}
