@@ -1,9 +1,19 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { Splash } from './components/splash/Splash';
+import React from 'react'
+import { render } from 'react-dom'
+import { Splash } from './components/splash/Splash'
+import Grid from '@material-ui/core/Grid'
+import './index.css'
+import { Who } from './components/who/Who'
 
-const splash = (
-  <Splash/>
+const content = (
+  <div>
+    <Grid container spacing={3}>
+      <Grid item xs={12}>
+        <Splash/>
+      </Grid>
+      <Who/>
+    </Grid>
+  </div>
 );
 
-render(splash, document.getElementById('app-root'));
+render(content, document.getElementById('app-root'));

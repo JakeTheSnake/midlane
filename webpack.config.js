@@ -16,6 +16,10 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
         test: /\.tsx?$/,
         use: ['ts-loader'],
         exclude: /node_modules/,
@@ -51,6 +55,6 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.png']
   }
 }

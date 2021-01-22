@@ -5,6 +5,6 @@ export const Splash = () => {
   return <div id="splash">
     <p id="logo">mid<span>lane</span></p>
       <hr/>
-    <p id="sc">software craftmanship</p>
+    <p id="sc">software craftsmanship</p>
   </div>
 };
