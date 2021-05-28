@@ -41,13 +41,8 @@ module.exports = {
     ]
   },
   devServer: {
-    host: '0.0.0.0',
-    port: 8080,
-    historyApiFallback: {
-      index: '/'
-    },
-    hot: true,
-    overlay: true
+    contentBase: './dist',
+    hot: true
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -55,6 +50,6 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx', '.png']
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
   }
 }
